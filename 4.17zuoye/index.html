@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./js/flexible.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <span>未使用</span>
+            <span>已使用</span>
+            <span>已过期</span>
+        </header>
+        <main>
+            <div class="content">
+
+            </div>
+            <div class="content">
+                
+            </div>
+            <div class="content">
+                
+            </div>
+            <div class="content">
+                
+            </div>
+        </main>
+    </div>
+</body>
+<script>
+    const spans=document.querySelectorAll("span");
+    spans.forEach(item=>{
+        item.onclick=()=>{
+            spans.forEach(item1=>{
+                item1.style.color="#000";
+            })
+            item.style.color="blue";
+        }
+    })
+</script>
+</html>
